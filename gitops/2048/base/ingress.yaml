@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: ingress-nginx
 spec:
-  ingressClassName: "2048"
+  ingressClassName: nginx
   rules:
   - host: 2048.local
     http:
