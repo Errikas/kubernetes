@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ingress-nginx
+  name: argocd
   
   namespace: argocd
   finalizers:
@@ -12,7 +12,7 @@ spec:
     namespace: lab
   project: default
   source:
-    path: gitops/ingress-nginx
+    path: gitops/argocd
     repoURL: https://github.com/Errikas/kubernetes.git
     targetRevision: main
   syncPolicy:
